@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/jefferyhoffman/project-2-template#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.1"
