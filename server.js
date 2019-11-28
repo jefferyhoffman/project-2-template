@@ -17,8 +17,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(morgan("dev"));
 
+// Static assets
+app.use(express.static("public"));
+
 // Routes
 app.use(require("./controllers/staticController"));
+app.use(require("./controllers/todosController"));
 
 // Synchronize my schema
 db.sequelize.sync({ force: true })
