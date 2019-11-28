@@ -2,7 +2,10 @@
 module.exports = (sequelize, DataTypes) => {
   const ToDo = sequelize.define('ToDo', {
     title: DataTypes.STRING,
-    isCompleted: DataTypes.BOOLEAN
+    isCompleted: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    }
   }, {});
 
   ToDo.associate = function (models) {
